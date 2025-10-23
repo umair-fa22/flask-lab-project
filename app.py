@@ -1,20 +1,17 @@
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return "Welcome to the Flask App!"
-
-@app.route('/health')
-def health():
-    return "OK"
-
-@app.route('/data', methods=['POST'])
-def data():
-    return jsonify({"message": "Data received"}), 200
-
+    name = None
+    email = None
+    
+    if request.method == 'POST':
+        name = request.form.get('name')
+        email = request.form.get('email')
+    
+    return render_template('index.html', name=name, email=email)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
-
+    app.run(debug=True)

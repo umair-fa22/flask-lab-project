@@ -1,4 +1,6 @@
-from app import app
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
 
 def test_home():
     response = app.test_client().get('/')

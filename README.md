@@ -6,8 +6,8 @@ This project is a collaborative Flask web application built using GitHub, Docker
 ## Team Setup
 - **Total Members:** 2
 - **Roles:**
-  - **Member 1 (Backend Lead & DevOps Engineer):** Implements core Flask routes and logic, handles Docker configuration, testing, and CI/CD pipeline setup.
-  - **Member 2 (Frontend/API Integration):** Works on templates, static files, and API endpoints.
+  - **Member 1 [UMAIR ALI FA22-BSE-137] (Backend Lead & DevOps Engineer):** Implements core Flask routes and logic, handles Docker configuration, testing, and CI/CD pipeline setup.
+  - **Member 2 [AZAN WAHLA FA22-BSE-105] (Frontend/API Integration):** Works on templates, static files, and API endpoints.
 
 ## Project Structure
 ```

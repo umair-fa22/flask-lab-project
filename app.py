@@ -14,4 +14,5 @@ def home():
     return render_template('index.html', name=name, email=email)
 
 if __name__ == '__main__':
+    print("Hello to App")
     app.run(host='0.0.0.0', port=5000, debug=True)
